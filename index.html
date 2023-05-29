@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <title>Edoro Assesment</title>
+    <style>
+
+        /* using Internal/Embeded CSS  */
+
+        * {
+            margin: 0px;
+            font-family: 'Ubuntu', sans-serif;
+            padding: 0px;
+        }
+
+        .navbar_section {
+            width: 1440px;
+            height: 70px;
+            background-color: rgb(38, 41, 61);
+            padding-top: 20px;
+        }
+
+        .logo_img {
+            width: 160px;
+            height: 50px;
+            background-image: url("images/edoroLLp.png");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 100% 100%;
+            display: inline;
+            position: absolute;
+            left: 80px;
+
+        }
+
+        .toggle_button {
+            cursor: pointer;
+            color: white;
+            float: right;
+            margin-right: 40px;
+            font-size: 40px;
+            margin-top: 0px
+        }
+
+        .background_img_section {
+            width: 1440px;
+            height: 750px;
+            background-image: url("/images/bg1111.jpg");
+            background-color: rgb(0, 0, 0);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 100% 100%;
+
+        }
+        .background_img_section_heading {
+            text-align: center;
+            color: whitesmoke;
+            font-weight: bold;
+            position: absolute;
+            top: 250px;
+            left: 340px;
+            font-size: 80px;
+        }
+        .background_img_section_paragraph {
+            text-align: center;
+            color: whitesmoke;
+            position: absolute;
+            top: 370px;
+            left: 212px;
+            font-size: 23px;
+            /* font-weight: bold; */
+            margin: 0px;
+        }
+        .background_img_button_section {
+            color: whitesmoke;
+            font-size: 23px;
+            position: absolute;
+            top: 645px;
+            left: 550px;
+        }
+        .background_img_button_section_arrow{
+            position: absolute;
+            color: white;
+            opacity: .85;
+            font-size:30px;
+            left: 802px;
+            top: 645px;
+            z-index: 2;
+        } 
+        .background_img_section_button {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            border: 3px solid orangered;
+            background-color: black;
+            position: absolute;
+            top: 620px;
+            left: 830px;
+            cursor: pointer;
+        }
+        .background_img_section_sub {
+            width: 1440px;
+            height: 300px;
+            display: flex;
+            background-color: rgb(230, 227, 227);
+        }
+        .background_img_section_sub_div {
+            width: 370px;
+            height: 250px;
+            margin: 0px auto;
+            margin-top: 25px;
+            /* border: 2px solid black; */
+        }
+        .icons {
+            font-size: 50px;
+            color: whitesmoke;
+            margin-left: 10px;
+
+        }
+        .icons_heading {
+            display: inline;
+            font-size: 25px;
+            margin-left: 10px;
+        }
+        .icons_paragraph {
+            font-size: 17px;
+            margin-left: 75px;
+            margin-top: 20px;
+        }
+        .icons_paragraph_sub {
+            font-size: 17px;
+            margin-left: 55px;
+            margin-top: 20px;
+        }
+        .icons123 {
+            position: relative;
+            top: 15px;
+        }
+        .about_section {
+            height: 1050px;
+            width: 1440px;
+            background-color: rgb(31, 34, 49);
+        }
+        .about_section_heading {
+            text-align: center;
+            font-size: 25px;
+            font-weight: lighter;
+            color: whitesmoke;
+            text-transform: uppercase;
+            line-height: 200px;
+            letter-spacing: 1px;
+        }
+        .about_section_paragraph {
+            text-align: center;
+            letter-spacing: .7px;
+            font-size: 30px;
+            color: whitesmoke;
+        }
+        .about_section_paragraph_more a {
+            /* color: orangered; */
+            background: linear-gradient(to right, rgb(240, 26, 26), rgb(241, 133, 9));
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            -webkit-background-clip: text;
+            text-decoration: none;
+        }
+        .about_section_div {
+            display: flex;
+            margin: 75px 75px;
+        }
+        .about_section_subdiv {
+            width: 430px;
+            height: 550px;
+        }
+        .about_section_first_div_img1 {
+            width: 430px;
+            height: 275px;
+            background-image: url(/images/about1pic.jpg);
+            background-position: center;
+            background-size: 100% 100%;
+        }
+        .about_section_first_div_img2 {
+            width: 430px;
+            height: 275px;
+            background-image: url(/images/about3pic.jpg);
+            background-position: center;
+            background-size: 100% 100%;
+        }
+        .about_section_second_div_img1 {
+            width: 430px;
+            height: 550px;
+            background-image: url(/images/about4pic.jpg);
+            background-position: center;
+            background-size: 100% 100%;
+        }
+        #about_section_subdiv_bg {
+            background-color: rgb(16, 16, 16);
+        }
+        .about_section_subdiv_first_heading {
+            color: white;
+            margin: 35px 40px;
+            font-weight: lighter;
+            letter-spacing: .75px;
+            text-decoration: underline;
+        }
+        .about_section_subdiv_second_heading {
+            color: white;
+            margin: 0px 40px;
+            margin-top: 75px;
+            font-size: 25px;
+            font-weight: bold;
+            letter-spacing: .75px;
+        }
+        .about_section_subdiv_paragraph {
+            color: white;
+            margin: 0px 40px;
+            margin-top: 85px;
+            font-size: 17px;
+            letter-spacing: .65px;
+            font-weight: lighter;
+        }
+        .about_section_subdiv_readmore_main {
+            display: flex;
+        }
+        .about_section_subdiv_readmore {
+            color: white;
+            margin: 0px 40px;
+            margin-top: 75px;
+            font-size: 22px;
+            font-weight: bold;
+        }
+        .about_section_subdiv_readmore_arroow{
+            color: white;
+            margin-top: 77px;
+            margin-right:2px;
+            font-size: 25px;
+        }
+        .about_section_button {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            border: 3px solid rgb(239, 109, 62);
+            background-color: rgb(16, 16, 16);
+            margin-top: 55px;
+            cursor: pointer;
+        }
+        .services_section {
+            width: 1440px;
+            height: 760px;
+            background-color: rgb(16, 16, 16);
+        }
+        .services_section_main_heading {
+            color: white;
+            text-align: center;
+            line-height: 120px;
+            font-size: 25px;
+            font-weight: lighter;
+            padding-top: 20px;
+        }
+        .services_section_sub_heading {
+            color: white;
+            text-align: center;
+            font-size: 32.5px;
+            letter-spacing: .75px;
+        }
+        .services_section_div {
+            width: 1200px;
+            height: 400px;
+            margin: 100px auto;
+            display: flex;
+        }
+        .services_section_small_div {
+            width: 275px;
+            height: 400px;
+            background-color: rgb(31, 34, 49);
+            border-radius: 25px;
+            margin: 0px auto;
+        }
+        .services_section_small_div_icons {
+            width: 120px;
+            height: 100px;
+            margin: 30px 78.5px;
+        }
+        .services_section_small_div_heading {
+            text-align: center;
+            cursor: pointer;
+            color: white;
+            font-size: 25px;
+        }
+        #services_section_small_div_heading_underline {
+            text-decoration: underline;
+        }
+        .services_section_small_div_paragraph {
+            text-align: center;
+            color: white;
+            font-size: 15px;
+            letter-spacing: .4px;
+            font-weight: lighter;
+            margin: 30px 5px;
+            opacity: .9;
+        }
+        .our_client_section {
+            width: 1440px;
+            height: 500px;
+            background-color: rgb(31, 34, 49);
+        }
+
+        .our_client_section_heading {
+            text-align: center;
+            color: white;
+            font-size: 25px;
+            letter-spacing: .75px;
+            text-transform: uppercase;
+            font-weight: lighter;
+            line-height: 150px;
+        }
+        .our_client_section_images {
+            width: 1440px;
+            height: 350px;
+            display: flex;
+        }
+        .our_client_section_images img {
+            width: 200px;
+            height: 70px;
+            margin: 25px auto;
+        }
+        .our_client_section_images_second_row {
+            width: 1440px;
+            height: 200px;
+            margin-top: 150px;
+            display: flex;
+            position: absolute;
+        }
+        .our_client_section_images_second_row img {
+            margin: 25px auto;
+        }
+        .testimonal_section {
+            width: 1440px;
+            height: 900px;
+            background-color: rgb(16, 16, 16);
+        }
+        .testimonal_section_heading {
+            text-align: center;
+            color: white;
+            font-size: 25px;
+            letter-spacing: .75px;
+            line-height: 150px;
+            font-weight: lighter;
+        }
+        .testimonal_section_double_quote img {
+            width: 50x;
+            height: 50px;
+            display: inline;
+        }
+        #testimonal_section_double_quote_icon1 {
+            margin: 4px 200px;
+            margin-bottom: 0px;
+        }
+        .testimonal_section_para {
+            text-align: center;
+            color: white;
+            font-size: 20px;
+            letter-spacing: .5px;
+        }
+        #testimonal_section_double_quote_icon2 {
+            float: right;
+            margin: 0px 200px;
+        }
+        .testimonal_section_img img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin: 10px 670px;
+        }
+        .testimonal_section_name_heading {
+            text-align: center;
+            color: white;
+            font-size: 23px;
+            letter-spacing: .85px;
+            /* font-weight: bold */
+        }
+        .testimonal_section_address_heading {
+            text-align: center;
+            color: white;
+            font-size: 16px;
+            letter-spacing: .75px;
+            margin-top: 10px;
+        }
+        .testimonal_section_hrr {
+            width: 80%;
+            height: 1px;
+            background-color: rgb(65, 59, 59);
+            margin: 60px auto;
+        }
+        .testimonal_section_follow {
+            text-transform: uppercase;
+            font-size: 20px;
+            letter-spacing: .75px;
+            color: white;
+            text-align: center;
+        }
+        .testimonal_section_follow_icon {
+            font-size: 25px;
+            text-align: center;
+        }
+        .testimonal_section_follow_icons {
+            color: white;
+            margin: 0px 10px;
+            margin-top: 60px;
+        }
+        .menu {
+             position: absolute;
+            top: 0;
+            right: 79px;
+            width: 20em;
+            height: 22.5em;
+            background-color: rgb(43, 48, 70);
+            list-style-type: none;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            transform: translateY(-100%);
+            transition: transform .5s ease-in;
+            z-index: 1;
+        }
+        .menu_toggle_open {
+            position: absolute;
+            right: 135px;
+            top: 30px;
+            color: white;
+        }
+        .menu_toggle_close {
+            color: white;
+            font-size: 32px;
+            position: absolute;
+            right: 60px;
+            top: 25px;
+        }
+        .menu ul {
+            margin: 0;
+            padding: 0;
+        }
+        .menu li {
+            margin: 15px;
+            margin-top: 20px;
+            list-style: none;
+        }
+        #menu_toggle{
+            display: none;
+        }
+        .menu li a{
+            background: linear-gradient(to right, rgb(240, 26, 26), rgb(241, 133, 9));
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            -webkit-background-clip: text;
+            font-weight: bold;
+            margin:30px 10px;
+        }
+        #menu_toggle_search{
+            color: white;
+            margin-left: 10px;
+            opacity: .75;
+        }
+        .menu a {
+            color: black;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        .menu-icon {
+             top: 20px;
+            left: 20px;
+            font-size: 30px;
+            cursor: pointer;
+            z-index: 1;
+        }
+        #menu_toggle:checked~.menu {
+            transform: translateX(0);
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- According to sapmle the Assesment Design  width is 1440px and height is 4030px 
+                 that's why the size of this desgin is 1440px * 4030px -->
+    
+
+        <!-- First Navbar section starts here -->
+    <div class="navbar_section">
+        <div class="logo_img">
+        </div>
+        <!-- code for toggle menu bar  -->
+        <input type="checkbox" id="menu_toggle">
+        <label for="menu_toggle" class="menu-icon"><i class="fa-solid fa-bars menulogo menu_toggle_open"></i></label>
+        <nav class="menu">
+            <ul>
+                <li><label for="menu_toggle"><i class="fa-solid fa-xmark menu_toggle_close"></i></label></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Our Services</a></li>
+                <li><a href="#">portfolio</a></li>
+                <li><a href="#">Our Clients</a></li>
+                <li><a href="#">Career</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><i class="fa-solid fa-magnifying-glass" id="menu_toggle_search"></i></li>
+            </ul>
+        </nav>
+        
+    </div>
+    <!-- After Navbar the background image section ise here  -->
+    <div class="background_img_section_main">
+        <div class="background_img_section">
+            <div class="">
+                <h1 class="background_img_section_heading">We are professional</h1>
+                <p class="background_img_section_paragraph">We are specialized in Web development, Web Design and we
+                    also provide Testing & QA, client-<br>Server Solution, Desktop Application Development, Mobile
+                    Solution.We build web solutions, which<br> evolve with the changing needs of your business.</p>
+                <p class="background_img_button_section">Show more details </p>
+                 <i class="fa-solid fa-arrow-right background_img_button_section_arrow"></i>
+                <button class="background_img_section_button"></button>
+            </div>
+
+        </div>
+    </div>
+    <!-- the section below the background image section  -->
+    <div class="background_img_section_sub">
+        <div class="background_img_section_sub_div">
+            <span class="icons123"><i class="fa-regular fa-gem icons"></i></span>
+            <h3 class="icons_heading">Quality Products</h3>
+            <p class="icons_paragraph">
+                We never compromise with the quality<br> because quality
+                of the product is our<br> first
+                priority.We use our
+                experience with the latest
+                technology to develop world class product for our clients
+            </p>
+
+        </div>
+        <div class="background_img_section_sub_div">
+            <span class="icons123"><i class="fa-regular fa-clock icons"></i></span>
+            <h3 class="icons_heading">Fastest Delivery</h3>
+            <p class="icons_paragraph">
+                We respect value of TIME of our clients that motivate us for an time delivery
+                <br> of the product.To assure
+                it we use agile methodology during our software<br>
+                development
+            </p>
+
+        </div>
+        <div class="background_img_section_sub_div">
+            <span class="icons123"><i class="fa-solid fa-dollar-sign icons"></i></span>
+            <h3 class="icons_heading">Lowest Price</h3>
+            <p class="icons_paragraph_sub">
+                We are providing the solution at very cheap <br> cost to our those clients, who can not afford <br>
+                costly
+                software's and still running their<br> business on manual basis.
+            </p>
+
+        </div>
+    </div>
+    <!-- About Section starts here -->
+    <div class="about_section">
+        <h3 class="about_section_heading">About Us</h3>
+        <p class="about_section_paragraph">Edoro Technologies is a newly founded Software Development Company<br> based
+            at
+            Lucknow with the team of skilled and experienced IT experts<br> established in early 2015 .
+            <span class="about_section_paragraph_more"><a href="#">..more</a></span>
+        </p>
+
+        <div class="about_section_div">
+            <div class="about_section_subdiv">
+                <div class="about_section_first_div_img1"></div>
+                <div class="about_section_first_div_img2"></div>
+            </div>
+            <div class="about_section_subdiv">
+                <div class="about_section_second_div_img1"></div>
+            </div>
+            <div class="about_section_subdiv" id="about_section_subdiv_bg">
+                <h3 class="about_section_subdiv_first_heading">OUR VISION</h3>
+                <h2 class="about_section_subdiv_second_heading">Our vision is to deliver optimal solutions with top
+                    quality and best services at reasonable prices.</h2>
+                <p class="about_section_subdiv_paragraph">Lorem Ipsum is simply dummy text of the<br> printing and
+                    typesetting industry</p>
+                <div class="about_section_subdiv_readmore_main">
+                    <span class="about_section_subdiv_readmore">Read more </span>
+                    <i class="fa-solid fa-arrow-right about_section_subdiv_readmore_arroow"></i>
+                    <button class="about_section_button"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Service section starts here -->
+    <div class="services_section">
+        <h3 class="services_section_main_heading">OUR SERVICES</h3>
+        <h2 class="services_section_sub_heading">Lorem Ipsum dolor site amet dummy language</h2>
+        <div class="services_section_div">
+            <div class="services_section_small_div">
+                <img class="services_section_small_div_icons" src="/images/wbicon.webp" alt="icon loading">
+                <h3 class="services_section_small_div_heading">
+                    Web Solution
+                </h3>
+                <p class="services_section_small_div_paragraph">We analyze, design, develop and implement static as well
+                    as dynamic websites with latest technologies like HTML5, Responsive Design,jQuery etc.</p>
+            </div>
+            <div class="services_section_small_div">
+                <img class="services_section_small_div_icons" src="/images/cmpiconn.png" alt="icon loading">
+                <h3 class="services_section_small_div_heading" id="services_section_small_div_heading_underline">
+                    ERP/CRM Solution
+                </h3>
+                <p class="services_section_small_div_paragraph">We understand the requirements if client and offer
+                    customize as well as our own developed ERP/CRM solutions to make you more competitive in your
+                    segments</p>
+            </div>
+            <div class="services_section_small_div">
+                <img class="services_section_small_div_icons" src="/images/mbliconn.png" alt="icon loading">
+                <h3 class="services_section_small_div_heading" id="services_section_small_div_heading_underline">
+                    Mobile Application
+                </h3>
+                <p class="services_section_small_div_paragraph">As world is moving towards the smartphones, we also
+                    provide the mobile applications for ios, android and windows platform as per the client requirements
+                </p>
+            </div>
+            <div class="services_section_small_div">
+                <img class="services_section_small_div_icons" src="/images/1icon.png" alt="icon loading">
+                <h3 class="services_section_small_div_heading" id="services_section_small_div_heading_underline">
+                    Internship/Training
+                </h3>
+                <p class="services_section_small_div_paragraph">If you are looking for valuable industrial training
+                    opportunities,we can be right choice as we provide training on technologies like ASP.net, PHP,
+                    Android, iOS, python, NODE, Angular, React etc with live project</p>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- Our client section starts here -->
+    <!-- In this section I don't have clients logo that's why I use edoro logo repeatedly -->
+    <div class="our_client_section">
+        <h2 class="our_client_section_heading">Our Clients</h2>
+        <div class="our_client_section_images">
+            <img src="/images/edoroLLp.png" alt="">
+            <img src="/images/edoroLLp.png" alt="">
+            <img src="/images/edoroLLp.png" alt="">
+            <img src="/images/edoroLLp.png" alt="">
+            <img src="/images/edoroLLp.png" alt="">
+
+            <div class="our_client_section_images_second_row">
+                <img src="/images/edoroLLp.png" alt="">
+                <img src="/images/edoroLLp.png" alt="">
+                <img src="/images/edoroLLp.png" alt="">
+                <img src="/images/edoroLLp.png" alt="">
+                <img src="/images/edoroLLp.png" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- Testimonial section starts here -->
+    <div class="testimonal_section">
+        <h3 class="testimonal_section_heading">TESTIMONIALS</h3>
+        <span class="testimonal_section_double_quote">
+            <img id="testimonal_section_double_quote_icon1" src="/images/quotesicon.png" alt="icon loading">
+        </span>
+
+        <p class="testimonal_section_para">
+            I have been working with Edoro Technologies since March 2018.An assignment that started with<br> just a
+            small
+            application has blossomed into a long-standing relationships.The testimonial is not<br>
+            about their services have contributed towards my applications, because when we started<br>
+            working together he
+            was creating websites (designing, developing, programming) and it was<br> only later on they started
+            providing
+            professional concepts and strategy for our applications. This<br> testimonial is about a sense of trust and
+            reliability I feel towards Edoro Technologies, and I think<br> once you have this feeling for one particular
+            service, you can easily attribute it to other services<br> too....
+        </p>
+        <span class="testimonal_section_double_quote">
+            <img id="testimonal_section_double_quote_icon2" src="/images/quotesicon.png" alt="icon loading">
+        </span>
+        <div class="testimonal_section_img">
+            <img src="/images/img5.jpg" alt="image loading">
+            <h5 class="testimonal_section_name_heading">Mohammad Aaquib</h5>
+            <p class="testimonal_section_address_heading">Lucknow - Uttar Pradesh. (India)</p>
+        </div>
+
+        <div class="testimonal_section_hrr"></div>
+        <p class="testimonal_section_follow">
+            Follow us
+        </p>
+        <!-- the Social media icons here -->
+        <div class="testimonal_section_follow_icon">
+            <a href="#"><i class="fa-brands fa-square-facebook testimonal_section_follow_icons"></i></a>
+            <a href="#"><i class="fa-brands fa-square-instagram testimonal_section_follow_icons"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin testimonal_section_follow_icons"></i></a>
+            <a href="#"><i class="fa-brands fa-square-twitter testimonal_section_follow_icons"></i></a>
+            <a href="#"><i class="fa-brands fa-square-youtube testimonal_section_follow_icons"></i></a>
+        </div>
+    </div>
+</body>
+</html>
